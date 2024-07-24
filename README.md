@@ -1,4 +1,5 @@
 ## Hi there 👋
+A Campus Navigation System built for Amrita Vishwa Vidyapeetham, Coimbatore
 
 <!--
 **amrita-cns/amrita-cns** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
