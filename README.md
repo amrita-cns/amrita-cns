@@ -1,4 +1,5 @@
-## Hi there 👋
+## Amrita Campus Navigation System
+### ACNS
 A Campus Navigation System built for Amrita Vishwa Vidyapeetham, Coimbatore
 
 <!--
