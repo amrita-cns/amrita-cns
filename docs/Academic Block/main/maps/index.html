@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" class="theme-light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACNS</title>
+    <link rel="stylesheet" href="res/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="res/leaflet/leaflet.css">
+    <link rel="stylesheet" href="res/leaflet-routing/dist/leaflet-routing-machine.css">
+    <script src="res/leaflet/leaflet.js"></script>
+    <script src="res/leaflet-routing/dist/leaflet-routing-machine.js"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        *::-webkit-scrollbar {
+            width: 0.4rem;
+        }
+
+        *::-webkit-scrollbar-track {
+            width: 0.4rem;
+            background-color: rgb(179, 179, 179);
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #262626;
+        }
+
+        #matter {
+            width: 50rem;
+        }
+
+        #dispImg {
+            border-radius: 30px;
+            padding: 1rem;
+        }
+
+        @media screen and (max-width: 1192px) {
+            #matter {
+                width: 30rem;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            #matter {
+                width: 25rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #matter {
+                width: 30rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #matter {
+                width: 20rem;
+            }
+        }
+
+        #map {
+            width: 100vw;
+            z-index: 0;
+        }
+
+        #drop {
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body onload="fetchData()" id="page">
+    <!-- Hero Section (Title, Go back, and Map Buttons) -->
+    <section class="hero is-small" id="heroSec" style="background-color: #bd0c50">
+        <div class="hero-body">
+            <nav class="level">
+                <div class="level-left">
+                    <p class="title has-text-white" id="Pagetitle"></p>
+                </div>
+
+                <div class="level-right">
+
+                    <div class="dropdown" id="dropdownBtn">
+
+                        <div class="dropdown-trigger">
+                          <button class="button is-rounded" id="showPlaces">
+                            <span>Show Places</span>
+                          </button>
+                        </div>
+
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                          <div class="dropdown-content" id="dropdown-content">
+                                <!-- <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+                                <a href="#" class="dropdown-item"> Other dropdown item </a>
+                                <a href="#" class="dropdown-item"> Dropdown item </a>
+                                <a class="dropdown-item"> Other dropdown item </a> -->
+                          </div>
+                        </div>
+                      </div>
+
+                    <button class="button is-rounded" onclick="window.open('../index.html', '_self')" id="btn1">
+                        Go Back
+                    </button>
+
+                    <button class="button is-rounded" onclick="window.open('https://maps.app.goo.gl/E9HodTQPS8BdKH2w5', '_self')" id="btn2">
+                        View on G-Maps
+                    </button>
+
+                </div>
+
+                
+
+            </nav>
+        </div>
+    </section>
+    <!-- Hero Section (Title, Go back, and Map Buttons) -->
+
+    <!-- Map Section -->
+    <div id="map"></div>
+    <!-- Map Section -->
+
+    <script src="info.js"></script>
+    <script src="loader.js"></script>
+</body>
+
+</html>

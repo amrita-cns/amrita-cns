@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="homepage.css"> 
+</head>
+
+<body>
+    <div class="left"> 
+        <div class="sidemenu">
+
+        <!--add those redirecting links here-->
+         <a href="./Academic Block/main/index.html">AcademicBlocks</a>
+         <a href="./Hostel/main/index.html">Hostel</a>
+         <a href="./Canteen/main/index.html">Canteen</a>
+         <a href="./Bank/main/index.html">ATM</a>
+         <a href="./Facilities/main/index.html">Facilities</a>
+         <a href="./Halls/main/index.html">Halls</a>
+         <a href="./Others/main/index.html">Others</a>
+         <a href="#" id="feedback-link">FEEDBACK</a>
+         <!--...-->
+
+
+        </div>
+        <div class="heading">
+            <div class="subheading">
+                <h1>AMRITA CAMPUS<br>NAVIGATION SYSTEM</h1>
+                <hr>
+                <div class="bur"><h3>findeth</h3> <h2>where you are <br> where you're about to go</h2></div>
+            </div>
+        </div>  
+        <div class="circle">
+            <div class="circle1"></div>
+        </div>
+        <div class="map">
+            <div id="enquiry-form" ><form method="get"><table cellpadding="10"><tr height="30px"><font style="color: white; font-size: 30px;" ><br>Feedback form</font><!--<font style="color: red; text-align: right;">*</font>--></tr>
+                <tr><td><font style="color: white;">Name :</font></td><td align="left"><input type="text"></td></tr>
+                <tr><td><font style="color: white;">E-Mail :</font></td><td align="left"><input type="text"></td></tr>
+                <tr><td><font style="color: white;">Feedback :</font></td><td align="left"><textarea></textarea></td></tr>
+                <tr><td><br></td><td align="right"><div class FAQ><br><input type="submit" value="SUBMIT"></div></td></tr>
+                </table></form></div>
+        </div>
+        
+    <!--map image idhu... add map link here--><a href="./maps/index.html"><img id="map" src="map.png" width="100px"></a><!--...-->
+        
+    </div>
+    <img id="meow" src="meow.png" width="550px">     
+   
+
+    <script>
+        // JavaScript to toggle visibility of the feedback form
+        document.addEventListener('DOMContentLoaded', function() {
+            var feedbackLink = document.getElementById('feedback-link');
+            var enquiryForm = document.getElementById('enquiry-form');
+
+            feedbackLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                if (enquiryForm.style.visibility === 'hidden' || enquiryForm.style.visibility === '') {
+                    enquiryForm.style.visibility = 'visible';
+                } else {
+                    enquiryForm.style.visibility = 'hidden';
+                }
+            });
+        });
+    </script>
+
+</body>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="theme-light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ACNS</title>
+        <link rel="stylesheet" href="res/bulma/css/bulma.css" />
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            * {
+                scroll-behavior: smooth;
+            }
+
+            *::-webkit-scrollbar {
+                width: 0.4rem;
+            }
+
+            *::-webkit-scrollbar-track {
+                width: 0.4rem;
+                background-color: rgb(179, 179, 179);
+            }
+
+            *::-webkit-scrollbar-thumb {
+                background-color: #262626;
+            }
+
+            #matter {
+                width: 50rem;
+            }
+
+            #dispImg {
+                border-radius: 30px;
+                margin: 1rem;
+                box-shadow: 0px 0px 50px 0px #0000002f;
+            }
+
+            @media screen and (max-width: 1192px) {
+                #matter {
+                    width: 30rem;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                #matter {
+                    width: 25rem;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                #matter {
+                    width: 30rem;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                #matter {
+                    width: 20rem;
+                }
+            }
+        </style>
+        <script src="info.js"></script>
+        <script src="loader.js"></script>
+    </head>
+
+    <body onload="fetchData()" id="page">
+        <!-- Hero Section (Title, Go back, and Map Buttons) -->
+        <section class="hero is-small" style="background-color: #bd0c50">
+            <div class="hero-body">
+                <nav class="level">
+                    <div class="level-left">
+                        <p class="title has-text-white" id="Pagetitle"></p>
+                    </div>
+                    <div class="level-right">
+                        <button class="button is-rounded" onclick="window.open('../../index.html', '_self')">Go Back</button>
+                        <button class="button is-rounded" onclick="window.open('maps/index.html', '_self')">Open Map</button>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- Hero Section (Title, Go back, and Map Buttons) -->
+
+        <!-- Content View -->
+        <!-- <section class="hero is-widescreen">
+        <div class="hero-body">
+            <nav class="level">
+                <div class="level-item">
+                    <div class="content">
+                        <h1>Kajuraho</h1>
+                        <div id="matter">
+                            <p>
+                                The Khajuraho Group of Monuments are a group of Hindu and Jain temples in Chhatarpur district, Madhya Pradesh, India. They are about 175 kilometres southeast of Jhansi, 10 kilometres from Khajwa, 9 kilometres from Rajnagar, and 49 kilometres from district headquarter Chhatarpur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-item is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                    <img src="Kajuraho.jpg" width="320" height="240">
+                    <button class="button">Know More</button>
+                </div>
+            </nav>
+        </div>
+    </section> -->
+        <!-- Content View -->
+
+        <!-- Content View -->
+        <!-- <section class="hero is-widescreen">
+        <div class="hero-body">
+            <nav class="level">
+
+                <div class="level-item is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+                    <img src="Gandikota.jpg" width="320" height="240" style="border-radius: 30px; padding: 1rem;">
+                    <button class="button">Know More</button>
+                </div>
+
+
+                <div class="level-item">
+                    <div class="content">
+                        <h1>Gandikota original</h1>
+                        <div id="matter">
+                            <p>
+                                Gandikota is a village and historical fort on the right bank of the Penna river, 15 km from Jammalamadugu in Kadapa district, Andhra Pradesh, India. The fort was the centre of power for various dynasties, such as the Kalyani Chalukyas, Pemmasani Nayakas, and the Golconda Sultanate
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section> -->
+        <!-- Content View -->
+    </body>
+</html>

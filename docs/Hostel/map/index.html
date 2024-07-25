@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="theme-light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ACNS</title>
+        <link rel="stylesheet" href="res/bulma/css/bulma.css" />
+        <link rel="stylesheet" href="res/leaflet/leaflet.css" />
+        <script src="res/leaflet/leaflet.js"></script>
+        <link
+            rel="stylesheet"
+            href="res/leaflet-routing/dist/leaflet-routing-machine.css"
+        />
+        <script src="res/leaflet-routing/dist/leaflet-routing-machine.js"></script>
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            * {
+                scroll-behavior: smooth;
+            }
+
+            *::-webkit-scrollbar {
+                width: 0.4rem;
+            }
+
+            *::-webkit-scrollbar-track {
+                width: 0.4rem;
+                background-color: rgb(179, 179, 179);
+            }
+
+            *::-webkit-scrollbar-thumb {
+                background-color: #262626;
+            }
+
+            #matter {
+                width: 50rem;
+            }
+
+            #dispImg {
+                border-radius: 30px;
+                padding: 1rem;
+            }
+
+            @media screen and (max-width: 1192px) {
+                #matter {
+                    width: 30rem;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                #matter {
+                    width: 25rem;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                #matter {
+                    width: 30rem;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                #matter {
+                    width: 20rem;
+                }
+            }
+
+            #map {
+                width: 100vw;
+            }
+        </style>
+        <script src="info.js"></script>
+        <script src="loader.js"></script>
+    </head>
+
+    <body onload="fetchData()" id="page">
+        <!-- Hero Section (Title, Go back, and Map Buttons) -->
+        <section
+            class="hero is-small"
+            id="heroSec"
+            style="background-color: #bd0c50"
+        >
+            <div class="hero-body">
+                <nav class="level">
+                    <div class="level-left">
+                        <p class="title has-text-white" id="Pagetitle"></p>
+                    </div>
+                    <div class="level-right">
+                        <button
+                            class="button is-rounded"
+                            onclick="window.open('../main/index.html', '_self')"
+                            id="btn1"
+                        >
+                            Go Back
+                        </button>
+                        <button
+                            class="button is-rounded"
+                            onclick="getRoute()"
+                            id="btn2"
+                        >
+                            Show Route
+                        </button>
+                        <button
+                            class="button is-rounded"
+                            onclick="getRoute()"
+                            id="btn3"
+                        >
+                            Update
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- Hero Section (Title, Go back, and Map Buttons) -->
+
+        <!-- Map Section -->
+        <div id="map"></div>
+        <!-- Map Section -->
+    </body>
+</html>
