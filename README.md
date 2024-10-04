@@ -1,3 +1,5 @@
+# This project has been deprecated in favor of its rewrite. Check out https://github.com/amrita-cns/findeth
+
 ## Amrita Campus Navigation System
 ### ACNS
 The CNS (Campus Navigation System) is a map showcasing the major areas of the campus, such as the various Academic Blocks, Halls, Hostels among others. The website's homepage is connected to the main page of the map. Clicking on each marker of the map takes you to the respective mini descriptions of the place clicked. These descriptions give an overall view of the facilities and characteristics of the selected place. 
